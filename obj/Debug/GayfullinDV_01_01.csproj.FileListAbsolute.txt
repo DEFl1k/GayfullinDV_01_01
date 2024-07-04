@@ -1,0 +1,8 @@
+C:\Users\307-09\Desktop\GayfullinDV_01_01\bin\Debug\GayfullinDV_01_01.exe.config
+C:\Users\307-09\Desktop\GayfullinDV_01_01\bin\Debug\GayfullinDV_01_01.exe
+C:\Users\307-09\Desktop\GayfullinDV_01_01\bin\Debug\GayfullinDV_01_01.pdb
+C:\Users\307-09\Desktop\GayfullinDV_01_01\obj\Debug\GayfullinDV_01_01.csproj.AssemblyReference.cache
+C:\Users\307-09\Desktop\GayfullinDV_01_01\obj\Debug\GayfullinDV_01_01.csproj.SuggestedBindingRedirects.cache
+C:\Users\307-09\Desktop\GayfullinDV_01_01\obj\Debug\GayfullinDV_01_01.csproj.CoreCompileInputs.cache
+C:\Users\307-09\Desktop\GayfullinDV_01_01\obj\Debug\GayfullinDV_01_01.exe
+C:\Users\307-09\Desktop\GayfullinDV_01_01\obj\Debug\GayfullinDV_01_01.pdb
