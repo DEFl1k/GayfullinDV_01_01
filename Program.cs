@@ -2,7 +2,7 @@
 
 namespace GayfullinDV_01_01
 {
-    public class Program : Pitanie
+    public class Program
     {
         static void Main()
         {
