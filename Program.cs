@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace GayfullinDV_01_01
 {
@@ -20,47 +20,46 @@ namespace GayfullinDV_01_01
 
             Console.ReadKey();
         }
-    }
 
-    public class Pitanie
-    {
-        public string Name { get; set; }
-        public double Belok { get; set; }
-        public double Uglevods { get; set; }
-
-        public double Q()
+        public class Pitanie
         {
-            return Uglevods * 4 + Belok * 4;
-        }
+            public string Name { get; set; }
+            public double Belok { get; set; }
+            public double Uglevods { get; set; }
 
-        public virtual string Info()
-        {
-            return $"Название: {Name}, Кол-во белка: {Belok}г, Кол-во углеводов: {Uglevods}г, Q: {Q()}";
-        }
-    }
-
-    public class Potomok: Pitanie
-    {
-        public double Zhiri { get; set; }
-
-        public double Qp()
-        {
-            if (Zhiri >= 0 && Zhiri <= 10)
+            public double Q()
             {
-                return Q() * 1.2 + Zhiri * 9;
+                return Uglevods * 4 + Belok * 4;
             }
 
-            else if (Zhiri > 10)
+            public virtual string Info()
             {
-                return Q() * 1.5 + Zhiri * 10;
+                return $"Название: {Name}, Кол-во белка: {Belok}г, Кол-во углеводов: {Uglevods}г, Q: {Q()}";
             }
-            return 0;
         }
 
-        public override string Info()
+        public class Potomok : Pitanie
         {
-            return $"Название: {Name}, Кол-во белка: {Belok}г, Кол-во углеводов: {Uglevods}г, Q: {Q()}, Кол-во жиров: {Zhiri}г, Qp: {Qp()}";
+            public double Zhiri { get; set; }
+
+            public double Qp()
+            {
+                if (Zhiri >= 0 && Zhiri <= 10)
+                {
+                    return Q() * 1.2 + Zhiri * 9;
+                }
+
+                else if (Zhiri > 10)
+                {
+                    return Q() * 1.5 + Zhiri * 10;
+                }
+                return 0;
+            }
+
+            public override string Info()
+            {
+                return $"Название: {Name}, Кол-во белка: {Belok}г, Кол-во углеводов: {Uglevods}г, Q: {Q()}, Кол-во жиров: {Zhiri}г, Qp: {Qp()}";
+            }
         }
     }
-
 }
